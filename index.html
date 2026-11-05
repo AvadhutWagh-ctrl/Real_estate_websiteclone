@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real Estate - Find Your Dream Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Inter / Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="logo">
+        <span class="logo-icon">&#9632;</span>
+        <span class="logo-text">Logo</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#home" class="active">Home</a>
+        <a href="#explore">Explore</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact Us</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="#inquiry" class="btn btn-primary">Request a Call</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1 class="hero-title">YOUR DREAM HOME<br><span class="hero-subtitle">IS ONE CLICK AWAY</span></h1>
+
+      <!-- Search & Filter Card -->
+      <div class="filter-card">
+        <div class="filter-tabs">
+          <button class="tab-btn active">All Units</button>
+          <button class="tab-btn">For Rent</button>
+          <button class="tab-btn">For Sale</button>
+        </div>
+
+        <form class="filter-form" onsubmit="event.preventDefault();">
+          <div class="form-group">
+            <label for="location">Location</label>
+            <input type="text" id="location" placeholder="Select your city" />
+          </div>
+
+          <div class="form-group">
+            <label for="property-type">Property Type</label>
+            <select id="property-type">
+              <option value="">Deluxe Villa</option>
+              <option value="apartment">Apartment</option>
+              <option value="house">Modern House</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="price-range">Price Range</label>
+            <select id="price-range">
+              <option value="">$2,000 - $5,000</option>
+              <option value="5k-10k">$5,000 - $10,000</option>
+              <option value="10k+">$10,000+</option>
+            </select>
+          </div>
+
+          <div class="form-group submit-group">
+            <button type="submit" class="btn btn-search">Search Now</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Properties Section -->
+  <section class="properties-section" id="explore">
+    <div class="container">
+      <div class="section-header">
+        <h2>Explore Properties</h2>
+        <p>Browse our handpicked selection of premium listings across key locations.</p>
+      </div>
+
+      <div class="property-grid">
+        <!-- Property Card 1 -->
+        <article class="property-card">
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=600&q=80" alt="Light And Modern House" />
+            <span class="badge">For Sale</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Light And Modern House</h3>
+            <p class="card-address">742 Evergreen Terrace, Springfield</p>
+            <div class="card-meta">
+              <span>&#128716; 4 Beds</span>
+              <span>&#128705; 3 Baths</span>
+              <span>&#128208; 2,400 sqft</span>
+            </div>
+            <div class="card-footer">
+              <span class="price">$420,000</span>
+              <button class="btn btn-secondary">View Details</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Property Card 2 -->
+        <article class="property-card">
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Suburban Family Villa" />
+            <span class="badge">For Rent</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Suburban Family Villa</h3>
+            <p class="card-address">10880 Wilshire Blvd, Los Angeles</p>
+            <div class="card-meta">
+              <span>&#128716; 5 Beds</span>
+              <span>&#128705; 4 Baths</span>
+              <span>&#128208; 3,200 sqft</span>
+            </div>
+            <div class="card-footer">
+              <span class="price">$3,800 / mo</span>
+              <button class="btn btn-secondary">View Details</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Property Card 3 -->
+        <article class="property-card">
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80" alt="Contemporary Minimal Home" />
+            <span class="badge">For Sale</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Contemporary Minimal Home</h3>
+            <p class="card-address">2400 Westheimer Rd, Houston</p>
+            <div class="card-meta">
+              <span>&#128716; 3 Beds</span>
+              <span>&#128705; 2 Baths</span>
+              <span>&#128208; 1,950 sqft</span>
+            </div>
+            <div class="card-footer">
+              <span class="price">$315,000</span>
+              <button class="btn btn-secondary">View Details</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Property Card 4 -->
+        <article class="property-card">
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80" alt="Luxury Hillside Estate" />
+            <span class="badge">For Sale</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Luxury Hillside Estate</h3>
+            <p class="card-address">5600 Glenwood Ave, Raleigh</p>
+            <div class="card-meta">
+              <span>&#128716; 4 Beds</span>
+              <span>&#128705; 3 Baths</span>
+              <span>&#128208; 2,800 sqft</span>
+            </div>
+            <div class="card-footer">
+              <span class="price">$560,000</span>
+              <button class="btn btn-secondary">View Details</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="load-more-wrapper">
+        <button class="btn btn-outline">Load More</button>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
